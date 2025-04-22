@@ -1,0 +1,22 @@
+Target dependency graph (8 targets)
+FlutterMacOS in Pods, no dependencies
+path_provider_foundation-path_provider_foundation_privacy in Pods, no dependencies
+path_provider_foundation in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+path_provider_foundation-path_provider_foundation_privacy in Pods (explicit)
+sqflite_darwin-sqflite_darwin_privacy in Pods, no dependencies
+sqflite_darwin in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+sqflite_darwin-sqflite_darwin_privacy in Pods (explicit)
+Flutter Assemble in Runner, depends on:
+path_provider_foundation in Pods (implicit dependency via options '-framework path_provider_foundation' in build setting 'OTHER_LDFLAGS')
+sqflite_darwin in Pods (implicit dependency via options '-framework sqflite_darwin' in build setting 'OTHER_LDFLAGS')
+Pods-Runner in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+path_provider_foundation in Pods (explicit)
+sqflite_darwin in Pods (explicit)
+Runner in Runner, depends on:
+Flutter Assemble in Runner (explicit)
+Pods-Runner in Pods (implicit dependency via file 'Pods_Runner.framework' in build phase 'Link Binary')
+path_provider_foundation in Pods (implicit dependency via options '-framework path_provider_foundation' in build setting 'OTHER_LDFLAGS')
+sqflite_darwin in Pods (implicit dependency via options '-framework sqflite_darwin' in build setting 'OTHER_LDFLAGS')

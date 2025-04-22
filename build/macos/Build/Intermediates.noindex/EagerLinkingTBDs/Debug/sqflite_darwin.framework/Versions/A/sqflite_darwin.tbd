@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/sqflite_darwin.framework/Versions/A/sqflite_darwin'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _SqfliteDarwinDBBlockSQLiteCallBackFunction, _SqfliteDarwinDBExecuteBulkSQLCallback, 
+                       _SqfliteErrorBadParam, _SqfliteFsErrorCode, _SqfliteMethodExecute, 
+                       _SqfliteMethodInsert, _SqfliteMethodQuery, _SqfliteMethodUpdate, 
+                       _SqfliteParamContinueOnError, _SqfliteParamError, _SqfliteParamErrorCode, 
+                       _SqfliteParamErrorData, _SqfliteParamErrorMessage, _SqfliteParamInTransactionChange, 
+                       _SqfliteParamMethod, _SqfliteParamNoResult, _SqfliteParamResult, 
+                       _SqfliteParamSql, _SqfliteParamSqlArguments, _SqfliteParamTransactionId, 
+                       _SqfliteSqlPragmaSqliteDefensiveOff, _SqliteErrorCode, _sqfliteHasSqlLogLevel, 
+                       _sqfliteHasVerboseLogLevel, _sqflite_darwinVersionNumber, 
+                       _sqflite_darwinVersionString ]
+    objc-classes:    [ PodsDummy_sqflite_darwin, SqfliteBatchOperation, SqfliteCursor, 
+                       SqfliteDarwinDatabase, SqfliteDarwinDatabaseQueue, SqfliteDarwinResultSet, 
+                       SqfliteDarwinStatement, SqfliteDatabase, SqfliteMethodCallOperation, 
+                       SqfliteOperation, SqflitePlugin, SqfliteQueuedOperation ]
+    objc-ivars:      [ SqfliteDarwinStatement._inUse, SqfliteDarwinStatement._query, 
+                       SqfliteDarwinStatement._statement, SqfliteDarwinStatement._useCount ]
+...
