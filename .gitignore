@@ -1,0 +1,8 @@
+# Flutter
+/build/
+/.dart_tool/
+/ios/
+/android/
+*.iml
+*.lock
+.DS_Store
